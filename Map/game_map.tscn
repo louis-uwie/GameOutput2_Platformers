@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://dnv2tqaf5u6h2"]
+[gd_scene load_steps=15 format=3 uid="uid://dnv2tqaf5u6h2"]
 
 [ext_resource type="Texture2D" uid="uid://8w2qkvey01el" path="res://assets/sprites/Legacy-Fantasy - High Forest 2.3/Assets/Tiles.png" id="1_vkr14"]
 [ext_resource type="Texture2D" uid="uid://b3ifkhs0q571q" path="res://assets/sprites/Legacy-Fantasy - High Forest 2.3/Background/Background.png" id="2_nj50e"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://dx5j8ljcrmtce" path="res://assets/sprites/Legacy-Fantasy - High Forest 2.3/Assets/Tree-Assets.png" id="4_rludi"]
 [ext_resource type="Texture2D" uid="uid://mx8xiuimb8jb" path="res://assets/sprites/Legacy-Fantasy - High Forest 2.3/Assets/Props-Rocks.png" id="5_u3s31"]
 [ext_resource type="Texture2D" uid="uid://d11l5aggml11b" path="res://assets/sprites/Legacy-Fantasy - High Forest 2.3/Trees/Green-Tree.png" id="6_sjhba"]
+[ext_resource type="PackedScene" uid="uid://dtqnhwca43eco" path="res://scenes/playerBody.tscn" id="7_1lmf5"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_uf42m"]
 texture = ExtResource("1_vkr14")
@@ -5321,3 +5322,6 @@ layer_14/name = "MiscDesigns2"
 layer_14/tile_data = PackedInt32Array(1638438, 786436, 16, 1703973, 458756, 5, 1769509, 458756, 6, 1703972, 393220, 5, 1769508, 393220, 6, 1114137, 1048576, 18, 1179673, 1048576, 19, 1114141, 1048576, 20, 1179677, 1048576, 21, 458792, 983040, 16, 393248, 983040, 16, -327683, 196608, 0, -327682, 262144, 0, -327684, 131072, 0, 327677, 983040, 15, 2097184, 327680, 268435477, 2097183, 393216, 268435477, 2097182, 458752, 268435477, 2097181, 524288, 268435477, 2097180, 589824, 268435477, 2162720, 327680, 268435478, 2162719, 393216, 268435478, 2162718, 458752, 268435478, 2162717, 524288, 268435478, 2162716, 589824, 268435478, 2031617, 1245184, 19, 2097153, 1245184, 20, 2162689, 1245184, 21, 2031618, 1310720, 19, 2097154, 1310720, 20, 2162690, 1310720, 21, 2031621, 1114112, 19, 2097157, 1114112, 20, 2031622, 1179648, 19, 2097158, 1179648, 20, 2031614, 65536, 0, 2031615, 131072, 0, 1966080, 262144, 0, 1835022, 1310720, 15, 1900558, 1310720, 16, 1900559, 983040, 15)
 layer_15/name = "MiscDesigns3"
 layer_15/tile_data = PackedInt32Array()
+
+[node name="PlayerBody" parent="." instance=ExtResource("7_1lmf5")]
+position = Vector2(633, 432)
