@@ -15886,6 +15886,7 @@ layer_15/name = "MiscDesigns3"
 layer_15/tile_data = PackedInt32Array()
 
 [node name="StaticBody2D" type="StaticBody2D" parent="TileMap"]
+visible = false
 
 [node name="WorldBorder" type="CollisionPolygon2D" parent="TileMap/StaticBody2D"]
 polygon = PackedVector2Array(0, -16, 0, -80, -64, -80, -64, -144, 624, -144, 624, -192, -64, -256, -128, -256, -128, 640, 768, 640, 768, -192, 664, -192, 632, -192, 632, -168, 632, -144, 664, -144, 664, 544, 664, 544, 648, 544, -56, 544, -56, 344, 288, 344, 392, 344, 392, 272, 248, 272, 200, 272, 168, 256, 112, 256, 80, 240, 24, 240, 0, 256, -56, 256, -56, -16)
@@ -15914,3 +15915,10 @@ one_way_collision = true
 position = Vector2(-24, 448)
 
 [node name="Camera2D" type="Camera2D" parent="PlayerBody"]
+zoom = Vector2(2, 2)
+limit_left = -100
+limit_top = -200
+limit_right = 700
+limit_bottom = 650
+limit_smoothed = true
+editor_draw_limits = true
