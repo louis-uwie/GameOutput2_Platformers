@@ -96,8 +96,9 @@ animations = [{
 "speed": 8.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_fp31a"]
-size = Vector2(29, 31)
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_fe7mj"]
+radius = 16.5
+height = 33.0
 
 [node name="PlayerBody" type="CharacterBody2D"]
 script = ExtResource("1_m75be")
@@ -109,4 +110,4 @@ frame_progress = 0.274561
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-0.5, 0.5)
-shape = SubResource("RectangleShape2D_fp31a")
+shape = SubResource("CapsuleShape2D_fe7mj")
