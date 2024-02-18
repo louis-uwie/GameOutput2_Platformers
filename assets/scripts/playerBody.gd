@@ -32,7 +32,7 @@ func _physics_process(delta):
 	# Handle duck.
 	if Input.is_action_pressed("duck") and is_on_floor():
 		animation.play("duck")
-		position.y += 1
+		position.y += 5
 
 	var direction = Input.get_axis("left", "right")
 	
