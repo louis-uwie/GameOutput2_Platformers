@@ -15915,7 +15915,7 @@ one_way_collision = true
 position = Vector2(-24, 448)
 
 [node name="Camera2D" type="Camera2D" parent="PlayerBody"]
-zoom = Vector2(2, 2)
+zoom = Vector2(2.5, 2.5)
 limit_left = -100
 limit_top = -200
 limit_right = 700
